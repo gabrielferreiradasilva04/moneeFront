@@ -24,7 +24,6 @@ export default createVuetify({
         $vuetify: {
           dataIterator: {
             rowsPerPageText: 'Itens por Página',
-
           },
           dataFooter: {
             itemsPerPageText: 'Itens por Página',
@@ -44,8 +43,9 @@ export default createVuetify({
       light: {
         dark: false,
         colors: {
-          primary: colors.deepPurple.darken1,
-          secondary: colors.grey.lighten5,
+          primary: '#2563EB',
+          secondary: '#22C55E',
+          action: '#F97316',
           error: colors.red.darken2,
           warning: colors.orange.lighten1,
           success: colors.lightGreen.lighten1
@@ -54,8 +54,9 @@ export default createVuetify({
       dark: {
         light: false,
         colors: {
-          primary: colors.indigo.darken4,
-          secondary: colors.grey.lighten5,
+          primary: '#2563EB',
+          secondary: '#22C55E',
+          action: '#F97316',
           error: colors.red.darken2,
           warning: colors.orange.lighten1,
           success: colors.lightGreen.lighten1
@@ -63,4 +64,16 @@ export default createVuetify({
       }
     },
   },
+  defaults: {
+      VBtn: {
+        style: 'font-family: Inter, Nunito, Poppins, sans-serif;',
+      },
+      VCard: {
+        style: 'font-family: Inter, Nunito, Poppins, sans-serif;',
+      },
+      VTextField: {
+        style: 'font-family: Inter, Nunito, Poppins, sans-serif;',
+      },
+      // Adicione outros componentes conforme necessário
+    }
 })
